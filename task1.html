@@ -1,0 +1,61 @@
+<html>
+    <head>
+      <style>
+          h1{
+              color: rgb(7, 65, 45);
+              font-size: 100px;
+              margin-top: 30px;
+              margin-left: 400px;
+          }
+          p{
+              color: rgb(14, 85, 61);
+              font-size: 100px;
+              position: relative;
+              bottom: 70px;
+              left: 580px; 
+          }
+          #b1{
+              font-size: 40px;
+              position: relative;
+              left: 400px;
+              bottom: 50px;
+          }
+          #b2{
+              font-size: 40px;
+              position: relative;
+              left: 400px;
+              bottom: 50px;
+          }
+          #b3{
+              font-size: 40px;
+              position: relative;
+              left: 400px;
+              bottom: 50px;
+          }
+      </style>
+    </head>
+    <body>
+        <h1>Counter</h1>
+        <p id="span">0</p>
+        <button id="b1" onclick="increment()">increment</button>
+        <button id="b2" onclick="reset()">Reset</button>
+        <button id="b3" onclick="decrement()">Decrement</button>
+        <script>
+            //  var dcount=0;
+             var count=0;
+            //  var rcount=0;
+            function increment(){
+                count++;
+                document.getElementById("span").innerHTML=count;
+            }
+            function reset(){
+                count=0;
+                document.getElementById("span").innerHTML=count;
+              }
+            function decrement(){
+                count--;
+                document.getElementById("span").innerHTML=count;
+            }
+        </script>
+    </body>
+</html>
